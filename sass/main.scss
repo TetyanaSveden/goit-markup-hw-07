@@ -282,7 +282,7 @@ textarea {
 }
 .footer-position {
   display: block;
-  margin-right: 93px;
+  margin-right: auto;
 }
 .position-services {
   display: flex;
@@ -303,6 +303,7 @@ textarea {
   height: 50px;
   margin-right: 12px;
   border: 1px solid rgba(255, 255, 255, 0.3);
+  color: var(--main-background-color);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -350,7 +351,6 @@ textarea {
   margin-left: auto;
   margin-right: auto;
 }
-/* фонт задан по макету но не срабатывает  */
 
 .container-flex {
   width: 696px;
@@ -398,7 +398,6 @@ textarea {
 }
 .service-list {
   width: 270px;
-
   margin-right: 30px;
 }
 .service-list:last-child {
@@ -550,6 +549,7 @@ textarea {
   color: var(--text-color-dark);
   cursor: pointer;
   border: none;
+  border-radius: 4px;
   padding: 6px 22px;
   transition: var(--transition);
   transition-property: color, box-shadow, background-color;
@@ -774,15 +774,6 @@ textarea {
   position: relative;
   margin-bottom: 28px;
 }
-
-.form-lable {
-  position: absolute;
-  top: 50%;
-  left: 42px;
-  transform: translateY(-50%);
-  transition: var(--transition);
-}
-
 .input-form {
   width: 448px;
   height: 40px;
@@ -792,10 +783,17 @@ textarea {
   outline: none;
   padding-left: 40px;
 }
-.input-form:focus + .form-lable,
-.input-form:not(:placeholder-shown) + .form-lable {
+.input-form:focus + .form-label,
+.input-form:not(:placeholder-shown) + .form-label {
   left: 0;
   transform: translateY(-40px);
+}
+.form-label {
+  position: absolute;
+  top: 50%;
+  left: 42px;
+  transform: translateY(-50%);
+  transition: var(--transition);
 }
 
 .form-icon {
@@ -843,7 +841,7 @@ textarea {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-.labletext {
+.labeltext {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
@@ -876,7 +874,7 @@ textarea {
   letter-spacing: 0.03em;
 }
 
-.lablecheckbox {
+.labelcheckbox {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
@@ -884,6 +882,7 @@ textarea {
   align-items: center;
   display: inline-flex;
 }
+
 .checkbox {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -913,4 +912,7 @@ textarea {
   background-size: contain;
   background-origin: border-box;
   transition: var(--transition);
+}
+.checkbox:focus + .checkicon {
+  border-color: var(--text-color-lightblue);
 }
