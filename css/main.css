@@ -1011,16 +1011,6 @@ textarea {
   margin-bottom: 28px;
 }
 
-.form-lable {
-  position: absolute;
-  top: 50%;
-  left: 42px;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
-}
-
 .input-form {
   width: 448px;
   height: 40px;
@@ -1032,11 +1022,20 @@ textarea {
   padding-left: 40px;
 }
 
-.input-form:focus + .form-lable,
-.input-form:not(:placeholder-shown) + .form-lable {
+.input-form:focus + .form-label,
+.input-form:not(:placeholder-shown) + .form-label {
   left: 0;
   -webkit-transform: translateY(-40px);
   transform: translateY(-40px);
+}
+.form-label {
+  position: absolute;
+  top: 50%;
+  left: 42px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
 }
 
 .form-icon {
