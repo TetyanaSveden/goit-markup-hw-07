@@ -1209,5 +1209,8 @@ textarea {
   -webkit-transition: var(--transition);
   transition: var(--transition);
 }
+.checkbox:focus + .checkicon {
+  border-color: var(--text-color-lightblue);
+}
 
 /*# sourceMappingURL=main.css.map */
