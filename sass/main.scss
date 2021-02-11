@@ -56,7 +56,6 @@ svg {
 textarea {
   resize: none;
 }
-
 /* header */
 .container {
   width: 1200px;
@@ -907,7 +906,6 @@ textarea {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transition-property: background-color, border-color;
 }
-
 .checkbox:checked + .checkicon {
   border-color: var(--text-color-lightblue);
   background-color: #2196f3;
