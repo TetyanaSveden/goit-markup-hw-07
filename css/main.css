@@ -355,7 +355,7 @@ textarea {
 
 .footer-position {
   display: block;
-  margin-right: 93px;
+  margin-right: auto;
 }
 
 .position-services {
@@ -1159,7 +1159,7 @@ textarea {
   letter-spacing: 0.03em;
 }
 
-.lablecheckbox {
+.labelcheckbox {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
@@ -1208,4 +1208,5 @@ textarea {
   -webkit-transition: var(--transition);
   transition: var(--transition);
 }
+
 /*# sourceMappingURL=main.css.map */
