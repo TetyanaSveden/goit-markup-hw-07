@@ -41,13 +41,13 @@ textarea {
   resize: none;
 }
 
-/* header */
 .container {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
+/* header */
 .phonesvg {
   margin-right: 10px;
   -webkit-box-align: center;
@@ -1165,7 +1165,7 @@ textarea {
   transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox:focus + .checkicon {
-  border-color: #2196f3;
+.labelcheckbox:focus-within {
+  outline: 2px solid black;
 }
 /*# sourceMappingURL=main.css.map */
