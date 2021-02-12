@@ -1,24 +1,8 @@
-:root {
-  --main-background-color: #ffffff;
-  --dark-background-color: #2f303a;
-  --blue-light-color: #2196f3;
-  --line-color: #ececec;
-  --background-picture: #f5f4fa;
-
-  --text-color-white: var(--main-background-color);
-  --text-color-dark: #212121;
-  --text-color-grey: #757575;
-  --text-color-lightblue: #2196f3;
-  --text-color-black: #000000;
-  --text-color-grey-through: rgba(255, 255, 255, 0.6);
-  --text-ikons-grey: #afb1b8;
-
-  --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
+@import "utils/variables";
 
 body {
-  background: var(--main-background-color);
-  font-family: Roboto;
+  background: $main-background-color;
+  font-family: $font-family-main;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -40,11 +24,11 @@ p {
   margin-bottom: 0;
 }
 footer {
-  background: var(--dark-background-color);
+  background: $dark-background-color;
 }
 
 nav .links.current {
-  color: var(--blue-light-color);
+  color: $blue-light-color;
   display: block;
 }
 
@@ -72,7 +56,7 @@ textarea {
 .phonesvg:hover,
 .phonesvg:focus {
   fill: currentColor;
-  transition: var(--transition);
+  transition: $transition;
 }
 
 .head {
@@ -82,17 +66,17 @@ textarea {
 }
 
 .header-color {
-  background: var(--main-background-color);
-  border-bottom: 1px solid var(--line-color);
+  background: $main-background-color;
+  border-bottom: 1px solid $line-color;
   width: 100%;
 }
 
 /*logo*/
 .web-color {
-  color: var(--text-color-lightblue);
+  color: $text-color-lightblue;
 }
 .studio-color {
-  color: var(--text-color-black);
+  color: $text-color-black;
   margin-right: 93px;
 }
 .text-decor {
@@ -121,7 +105,7 @@ textarea {
 
 /* contacts */
 .phone-color {
-  color: var(--text-color-grey);
+  color: $text-color-grey;
   text-decoration: none;
   font-weight: 500;
   line-height: 16px;
@@ -130,26 +114,26 @@ textarea {
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
-  transition: var(--transition);
+  transition: $transition;
   transition-property: color, fill;
 }
 .phone-color:hover,
 .phone-color:focus {
-  color: var(--text-color-lightblue);
+  color: $text-color-lightblue;
   fill: currentColor;
-  transition: var(--transition);
+  transition: $transition;
 }
 
 .links {
   position: relative;
-  color: var(--text-color-dark);
+  color: $text-color-dark;
   text-decoration: none;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
-  transition: var(--transition);
+  transition: $transition;
   transition-property: fill, color, opacity;
 }
 .links::after {
@@ -162,28 +146,28 @@ textarea {
   width: 100%;
   height: 4px;
   border-radius: 4px;
-  background-color: var(--text-color-lightblue);
+  background-color: $text-color-lightblue;
 
-  transition: var(--transition);
+  transition: $transition;
   opacity: 0;
 }
 .current.links::after,
 .links:hover::after {
-  transition: var(--transition);
+  transition: $transition;
   opacity: 1;
 }
 .links:hover,
 .links:focus {
-  color: var(--text-color-lightblue);
+  color: $text-color-lightblue;
   fill: currentColor;
-  transition: var(--transition);
+  transition: $transition;
 }
 
 /* footer */
 .foter-section {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: var(--dark-background-color);
+  background-color: $dark-background-color;
 }
 
 .flex {
@@ -193,7 +177,7 @@ textarea {
 
 .logo-footer {
   font-family: "Raleway", sans-serif;
-  color: var(--main-background-color);
+  color: $main-background-color;
   text-decoration: none;
   font-weight: bold;
   font-size: 26px;
@@ -202,11 +186,11 @@ textarea {
   margin-bottom: 20px;
 }
 .footer-web {
-  color: var(--text-color-lightblue);
+  color: $text-color-lightblue;
 }
 
 .address-decor {
-  color: var(--text-color-white);
+  color: $main-background-color;
   font-style: normal;
   margin-bottom: 9px;
 }
@@ -214,22 +198,22 @@ textarea {
 .footer-mail,
 .footer-phone {
   text-decoration: none;
-  color: var(--text-color-grey-through);
-  transition: var(--transition);
+  color: $text-color-grey-through;
+  transition: $transition;
   transition-property: color;
 }
 
 .footer-mail:hover,
 .footer-mail:focus {
-  color: var(--text-color-lightblue);
-  transition: var(--transition);
+  color: $text-color-lightblue;
+  transition: $transition;
   transition-property: color;
 }
 
 .footer-phone:hover,
 .footer-phone:focus {
-  color: var(--text-color-lightblue);
-  transition: var(--transition);
+  color: $text-color-lightblue;
+  transition: $transition;
 }
 
 .footer-contakt {
@@ -245,7 +229,7 @@ textarea {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--main-background-color);
+  color: $main-background-color;
   margin-bottom: 20px;
 }
 .footer-link-flow {
@@ -257,14 +241,14 @@ textarea {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   margin-right: 10px;
-  transition: var(--transition);
+  transition: $transition;
   transition-property: background-color;
 }
 
 .footer-link-flow:hover,
 .footerlinks:focus {
-  background-color: var(--blue-light-color);
-  transition: var(--transition);
+  background-color: $blue-light-color;
+  transition: $transition;
 }
 .footer-link-flow:last-child {
   margin-right: 0;
@@ -277,7 +261,7 @@ textarea {
   height: 100%;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  transition: var(--transition);
+  transition: $transition;
   transition-property: background-color;
 }
 .footer-position {
@@ -295,7 +279,7 @@ textarea {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--main-background-color);
+  color: $main-background-color;
   margin-bottom: 20px;
 }
 .dimentions {
@@ -303,7 +287,7 @@ textarea {
   height: 50px;
   margin-right: 12px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  color: var(--main-background-color);
+  color: $main-background-color;
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -328,7 +312,7 @@ textarea {
   justify-content: center;
 }
 .plane {
-  fill: var(--main-background-color);
+  fill: $main-background-color;
   margin-left: 10px;
 }
 /* main section */
@@ -344,7 +328,7 @@ textarea {
     url(../images/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: var(--dark-background-color);
+  background-color: $dark-background-color;
 }
 .owerlay {
   max-width: 1600px;
@@ -365,13 +349,13 @@ textarea {
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--text-color-white);
+  color: $main-background-color;
   text-transform: uppercase;
   margin-bottom: 30px;
 }
 .order {
-  color: var(--text-color-white);
-  background-color: var(--blue-light-color);
+  color: $main-background-color;
+  background-color: $blue-light-color;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
@@ -387,7 +371,7 @@ textarea {
 
 /* our services */
 .text-color {
-  color: var(--text-color-grey);
+  color: $text-color-grey;
   line-height: 1.71;
 }
 .ourquality {
@@ -414,7 +398,7 @@ textarea {
   align-items: center;
   width: 270px;
   height: 120px;
-  background: var(--background-picture);
+  background: $background-picture;
   border-radius: 4px;
   margin-bottom: 30px;
 }
@@ -463,7 +447,7 @@ textarea {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--main-background-color);
+  color: $main-background-color;
 }
 
 /*  our collegues  */
@@ -473,7 +457,7 @@ textarea {
   margin-bottom: 10px;
 }
 .occupation {
-  color: var(--text-color-grey);
+  color: $text-color-grey;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
@@ -503,17 +487,17 @@ textarea {
   justify-content: center;
 }
 .ikonssvg {
-  color: var(--main-background-color);
+  color: $main-background-color;
   transition-property: fill, color;
 }
 .ikonssvg:hover,
 .ikonssvg:focus {
-  color: var(--main-background-color);
-  fill: var(--main-background-color);
-  transition: var(--transition);
+  color: $main-background-color;
+  fill: $main-background-color;
+  transition: $transition;
 }
 .foot-ikonssvg {
-  fill: var(--main-background-color);
+  fill: $main-background-color;
 }
 
 .link-flow {
@@ -523,8 +507,8 @@ textarea {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  fill: var(--text-ikons-grey);
-  transition: var(--transition);
+  fill: $text-ikons-grey;
+  transition: $transition;
   transition-property: fill, background-color;
 }
 .link-space {
@@ -537,32 +521,32 @@ textarea {
 }
 .link-flow:hover,
 .link-flow:focus {
-  fill: var(--main-background-color);
-  background-color: var(--blue-light-color);
-  transition: var(--transition);
+  fill: $main-background-color;
+  background-color: $blue-light-color;
+  transition: $transition;
 }
 /*  portfolio buttons  */
 .buttons {
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
-  color: var(--text-color-dark);
+  color: $text-color-dark;
   cursor: pointer;
   border: none;
   border-radius: 4px;
   padding: 6px 22px;
-  transition: var(--transition);
+  transition: $transition;
   transition-property: color, box-shadow, background-color;
 }
 
 .buttons:hover,
 .buttons:focus {
-  color: var(--text-color-white);
-  background-color: var(--text-color-lightblue);
+  color: $main-background-color;
+  background-color: $text-color-lightblue;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  transition: var(--transition);
+  transition: $transition;
 }
 .container-buttons {
   display: flex;
@@ -584,7 +568,7 @@ textarea {
 }
 
 .portfolio-text-color {
-  color: var(--text-color-grey);
+  color: $text-color-grey;
   font-size: 16px;
   line-height: 1.87;
 }
@@ -604,9 +588,9 @@ textarea {
 
 .lidecor {
   text-decoration: none;
-  color: var(--text-color-dark);
+  color: $text-color-dark;
   transition: transform 250ms linear;
-  transition: var(--transition);
+  transition: $transition;
   transition-property: box-shadow, background-color, transform;
   will-change: transform;
   z-index: 1;
@@ -616,8 +600,8 @@ textarea {
   box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  background: var(--main-background-color);
-  transition: var(--transition);
+  background: $main-background-color;
+  transition: $transition;
   transform: translateY(0);
   z-index: 0;
 }
@@ -629,9 +613,9 @@ textarea {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
-  outline: 1px solid var(--line-color);
+  outline: 1px solid $line-color;
   text-align: left;
-  transition: var(--transition);
+  transition: $transition;
   transition-property: box-shadow, background-color, transform;
   z-index: 1;
 }
@@ -678,14 +662,14 @@ textarea {
 .moving-text {
   font-size: 18px;
   line-height: 28px;
-  color: var(--main-background-color);
+  color: $main-background-color;
 }
 
 /* our clients*/
 .clients-list {
   display: flex;
   justify-content: space-between;
-  fill: var(--text-ikons-grey);
+  fill: $text-ikons-grey;
 }
 .client-links {
   width: 170px;
@@ -698,16 +682,16 @@ textarea {
   align-items: center;
   width: 100%;
   height: 100%;
-  border: 1px solid var(--text-ikons-grey);
+  border: 1px solid $text-ikons-grey;
   border-radius: 4px;
-  color: var(--text-ikons-grey);
-  transition: var(--transition);
+  color: $text-ikons-grey;
+  transition: $transition;
   transition-property: color, border;
 }
 .link-size:hover,
 .link-size:focus {
-  color: var(--text-color-lightblue);
-  border: 1px solid var(--blue-light-color);
+  color: $text-color-lightblue;
+  border: 1px solid $blue-light-color;
 }
 
 .clients-color {
@@ -730,7 +714,7 @@ textarea {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background-color: var(--main-background-color);
+  background-color: $main-background-color;
   padding: 40px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -744,13 +728,13 @@ textarea {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: var(--main-background-color);
+  background-color: $main-background-color;
   border: 1px solid rgba(0, 0, 0, 0.103);
   cursor: pointer;
 }
 
 .modal-close-btn:hover {
-  color: var(--text-color-lightblue);
+  color: $text-color-lightblue;
 }
 .is-hidden {
   pointer-events: none;
@@ -793,7 +777,7 @@ textarea {
   top: 50%;
   left: 42px;
   transform: translateY(-50%);
-  transition: var(--transition);
+  transition: $transition;
 }
 
 .form-icon {
@@ -807,17 +791,17 @@ textarea {
 .form-filed:focus .input-form {
   border: 1px solid rgba(33, 150, 243, 0.9);
   border-radius: 4px;
-  transition: var(--transition);
+  transition: $transition;
   transition-property: border-color;
 }
 
 .input-form:focus {
-  fill: var(--text-color-lightblue);
+  fill: $text-color-lightblue;
   border: 1px solid rgba(33, 150, 243, 0.9);
   border-radius: 4px;
 }
 .input-form:focus ~ .form-icon {
-  fill: var(--text-color-lightblue);
+  fill: $text-color-lightblue;
 }
 
 .input-comment {
@@ -831,7 +815,7 @@ textarea {
 .input-comment:focus {
   border: 1px solid rgba(33, 150, 243, 0.9);
   border-radius: 4px;
-  transition: var(--transition);
+  transition: $transition;
   transition-property: border-color;
   outline: none;
 }
@@ -845,7 +829,7 @@ textarea {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
-  color: var(--text-color-grey);
+  color: $text-color-grey;
 }
 .form-comment {
   position: absolute;
@@ -868,7 +852,7 @@ textarea {
   justify-content: center;
 }
 .formlink {
-  color: var(--text-color-lightblue);
+  color: $text-color-lightblue;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
@@ -878,7 +862,7 @@ textarea {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: var(--text-color-grey);
+  color: $text-color-grey;
   align-items: center;
   display: inline-flex;
 }
@@ -898,7 +882,7 @@ textarea {
   height: 15px;
   margin-right: 9px;
 
-  border: 2px solid var(--text-color-black);
+  border: 2px solid $text-color-black;
   border-radius: 2px;
   cursor: pointer;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -906,13 +890,13 @@ textarea {
   transition-property: background-color, border-color;
 }
 .checkbox:checked + .checkicon {
-  border-color: var(--text-color-lightblue);
+  border-color: $text-color-lightblue;
   background-color: #2196f3;
   background-image: url("../images/icon-check1.svg");
   background-size: contain;
   background-origin: border-box;
-  transition: var(--transition);
+  transition: $transition;
 }
 .checkbox:focus + .checkicon {
-  border-color: var(--text-color-lightblue);
+  border-color: $text-color-lightblue;
 }

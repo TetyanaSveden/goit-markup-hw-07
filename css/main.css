@@ -1,21 +1,5 @@
-:root {
-  --main-background-color: #ffffff;
-  --dark-background-color: #2f303a;
-  --blue-light-color: #2196f3;
-  --line-color: #ececec;
-  --background-picture: #f5f4fa;
-  --text-color-white: var(--main-background-color);
-  --text-color-dark: #212121;
-  --text-color-grey: #757575;
-  --text-color-lightblue: #2196f3;
-  --text-color-black: #000000;
-  --text-color-grey-through: rgba(255, 255, 255, 0.6);
-  --text-ikons-grey: #afb1b8;
-  --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 body {
-  background: var(--main-background-color);
+  background: #ffffff;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -39,11 +23,11 @@ p {
 }
 
 footer {
-  background: var(--dark-background-color);
+  background: #2f303a;
 }
 
 nav .links.current {
-  color: var(--blue-light-color);
+  color: #2196f3;
   display: block;
 }
 
@@ -77,8 +61,8 @@ textarea {
 .phonesvg:hover,
 .phonesvg:focus {
   fill: currentColor;
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
+  -webkit-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .head {
@@ -94,18 +78,18 @@ textarea {
 }
 
 .header-color {
-  background: var(--main-background-color);
-  border-bottom: 1px solid var(--line-color);
+  background: #ffffff;
+  border-bottom: 1px solid #ececec;
   width: 100%;
 }
 
 /*logo*/
 .web-color {
-  color: var(--text-color-lightblue);
+  color: #2196f3;
 }
 
 .studio-color {
-  color: var(--text-color-black);
+  color: #000000;
   margin-right: 93px;
 }
 
@@ -146,7 +130,7 @@ textarea {
 
 /* contacts */
 .phone-color {
-  color: var(--text-color-grey);
+  color: #757575;
   text-decoration: none;
   font-weight: 500;
   line-height: 16px;
@@ -159,31 +143,31 @@ textarea {
           align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
+  -webkit-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition-property: color, fill;
   transition-property: color, fill;
 }
 
 .phone-color:hover,
 .phone-color:focus {
-  color: var(--text-color-lightblue);
+  color: #2196f3;
   fill: currentColor;
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
+  -webkit-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .links {
   position: relative;
-  color: var(--text-color-dark);
+  color: #212121;
   text-decoration: none;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
+  -webkit-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition-property: fill, color, opacity;
   transition-property: fill, color, opacity;
 }
@@ -197,32 +181,32 @@ textarea {
   width: 100%;
   height: 4px;
   border-radius: 4px;
-  background-color: var(--text-color-lightblue);
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
+  background-color: #2196f3;
+  -webkit-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0;
 }
 
 .current.links::after,
 .links:hover::after {
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
+  -webkit-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 1;
 }
 
 .links:hover,
 .links:focus {
-  color: var(--text-color-lightblue);
+  color: #2196f3;
   fill: currentColor;
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
+  -webkit-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* footer */
 .foter-section {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: var(--dark-background-color);
+  background-color: #2f303a;
 }
 
 .flex {
@@ -236,7 +220,7 @@ textarea {
 
 .logo-footer {
   font-family: "Raleway", sans-serif;
-  color: var(--main-background-color);
+  color: #ffffff;
   text-decoration: none;
   font-weight: bold;
   font-size: 26px;
@@ -246,11 +230,11 @@ textarea {
 }
 
 .footer-web {
-  color: var(--text-color-lightblue);
+  color: #2196f3;
 }
 
 .address-decor {
-  color: var(--text-color-white);
+  color: #ffffff;
   font-style: normal;
   margin-bottom: 9px;
 }
@@ -258,27 +242,27 @@ textarea {
 .footer-mail,
 .footer-phone {
   text-decoration: none;
-  color: var(--text-color-grey-through);
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
+  color: rgba(255, 255, 255, 0.6);
+  -webkit-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition-property: color;
   transition-property: color;
 }
 
 .footer-mail:hover,
 .footer-mail:focus {
-  color: var(--text-color-lightblue);
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
+  color: #2196f3;
+  -webkit-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition-property: color;
   transition-property: color;
 }
 
 .footer-phone:hover,
 .footer-phone:focus {
-  color: var(--text-color-lightblue);
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
+  color: #2196f3;
+  -webkit-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-contakt {
@@ -296,7 +280,7 @@ textarea {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--main-background-color);
+  color: #ffffff;
   margin-bottom: 20px;
 }
 
@@ -315,17 +299,17 @@ textarea {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   margin-right: 10px;
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
+  -webkit-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition-property: background-color;
   transition-property: background-color;
 }
 
 .footer-link-flow:hover,
 .footerlinks:focus {
-  background-color: var(--blue-light-color);
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
+  background-color: #2196f3;
+  -webkit-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link-flow:last-child {
@@ -346,8 +330,8 @@ textarea {
   height: 100%;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
+  -webkit-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition-property: background-color;
   transition-property: background-color;
 }
@@ -373,7 +357,7 @@ textarea {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--main-background-color);
+  color: #ffffff;
   margin-bottom: 20px;
 }
 
@@ -382,7 +366,7 @@ textarea {
   height: 50px;
   margin-right: 12px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  color: var(--main-background-color);
+  color: #ffffff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -423,7 +407,7 @@ textarea {
 }
 
 .plane {
-  fill: var(--main-background-color);
+  fill: #ffffff;
   margin-left: 10px;
 }
 
@@ -436,7 +420,7 @@ textarea {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: var(--dark-background-color);
+  background-color: #2f303a;
 }
 
 .owerlay {
@@ -458,14 +442,14 @@ textarea {
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--text-color-white);
+  color: #ffffff;
   text-transform: uppercase;
   margin-bottom: 30px;
 }
 
 .order {
-  color: var(--text-color-white);
-  background-color: var(--blue-light-color);
+  color: #ffffff;
+  background-color: #2196f3;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
@@ -482,7 +466,7 @@ textarea {
 
 /* our services */
 .text-color {
-  color: var(--text-color-grey);
+  color: #757575;
   line-height: 1.71;
 }
 
@@ -519,7 +503,7 @@ textarea {
           align-items: center;
   width: 270px;
   height: 120px;
-  background: var(--background-picture);
+  background: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
 }
@@ -581,7 +565,7 @@ textarea {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--main-background-color);
+  color: #ffffff;
 }
 
 /*  our collegues  */
@@ -592,7 +576,7 @@ textarea {
 }
 
 .occupation {
-  color: var(--text-color-grey);
+  color: #757575;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
@@ -631,21 +615,21 @@ textarea {
 }
 
 .ikonssvg {
-  color: var(--main-background-color);
+  color: #ffffff;
   -webkit-transition-property: fill, color;
   transition-property: fill, color;
 }
 
 .ikonssvg:hover,
 .ikonssvg:focus {
-  color: var(--main-background-color);
-  fill: var(--main-background-color);
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
+  color: #ffffff;
+  fill: #ffffff;
+  -webkit-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .foot-ikonssvg {
-  fill: var(--main-background-color);
+  fill: #ffffff;
 }
 
 .link-flow {
@@ -661,9 +645,9 @@ textarea {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  fill: var(--text-ikons-grey);
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
+  fill: #afb1b8;
+  -webkit-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition-property: fill, background-color;
   transition-property: fill, background-color;
 }
@@ -680,10 +664,10 @@ textarea {
 
 .link-flow:hover,
 .link-flow:focus {
-  fill: var(--main-background-color);
-  background-color: var(--blue-light-color);
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
+  fill: #ffffff;
+  background-color: #2196f3;
+  -webkit-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*  portfolio buttons  */
@@ -691,13 +675,13 @@ textarea {
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
-  color: var(--text-color-dark);
+  color: #212121;
   cursor: pointer;
   border: none;
   border-radius: 4px;
   padding: 6px 22px;
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
+  -webkit-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition-property: color, background-color, -webkit-box-shadow;
   transition-property: color, background-color, -webkit-box-shadow;
   transition-property: color, box-shadow, background-color;
@@ -706,13 +690,13 @@ textarea {
 
 .buttons:hover,
 .buttons:focus {
-  color: var(--text-color-white);
-  background-color: var(--text-color-lightblue);
+  color: #ffffff;
+  background-color: #2196f3;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
+  -webkit-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .container-buttons {
@@ -741,7 +725,7 @@ textarea {
 }
 
 .portfolio-text-color {
-  color: var(--text-color-grey);
+  color: #757575;
   font-size: 16px;
   line-height: 1.87;
 }
@@ -760,13 +744,13 @@ textarea {
 
 .lidecor {
   text-decoration: none;
-  color: var(--text-color-dark);
+  color: #212121;
   -webkit-transition: -webkit-transform 250ms linear;
   transition: -webkit-transform 250ms linear;
   transition: transform 250ms linear;
   transition: transform 250ms linear, -webkit-transform 250ms linear;
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
+  -webkit-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition-property: background-color, -webkit-box-shadow, -webkit-transform;
   transition-property: background-color, -webkit-box-shadow, -webkit-transform;
   transition-property: box-shadow, background-color, transform;
@@ -781,9 +765,9 @@ textarea {
           box-sizing: border-box;
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-  background: var(--main-background-color);
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
+  background: #ffffff;
+  -webkit-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transform: translateY(0);
           transform: translateY(0);
   z-index: 0;
@@ -801,10 +785,10 @@ textarea {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
-  outline: 1px solid var(--line-color);
+  outline: 1px solid #ececec;
   text-align: left;
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
+  -webkit-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition-property: background-color, -webkit-box-shadow, -webkit-transform;
   transition-property: background-color, -webkit-box-shadow, -webkit-transform;
   transition-property: box-shadow, background-color, transform;
@@ -868,7 +852,7 @@ textarea {
 .moving-text {
   font-size: 18px;
   line-height: 28px;
-  color: var(--main-background-color);
+  color: #ffffff;
 }
 
 /* our clients*/
@@ -879,7 +863,7 @@ textarea {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  fill: var(--text-ikons-grey);
+  fill: #afb1b8;
 }
 
 .client-links {
@@ -899,19 +883,19 @@ textarea {
           align-items: center;
   width: 100%;
   height: 100%;
-  border: 1px solid var(--text-ikons-grey);
+  border: 1px solid #afb1b8;
   border-radius: 4px;
-  color: var(--text-ikons-grey);
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
+  color: #afb1b8;
+  -webkit-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition-property: color, border;
   transition-property: color, border;
 }
 
 .link-size:hover,
 .link-size:focus {
-  color: var(--text-color-lightblue);
-  border: 1px solid var(--blue-light-color);
+  color: #2196f3;
+  border: 1px solid #2196f3;
 }
 
 .clients-color {
@@ -936,7 +920,7 @@ textarea {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background-color: var(--main-background-color);
+  background-color: #ffffff;
   padding: 40px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -950,13 +934,13 @@ textarea {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: var(--main-background-color);
+  background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.103);
   cursor: pointer;
 }
 
 .modal-close-btn:hover {
-  color: var(--text-color-lightblue);
+  color: #2196f3;
 }
 
 .is-hidden {
@@ -1008,8 +992,8 @@ textarea {
   left: 42px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
+  -webkit-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-icon {
@@ -1024,20 +1008,20 @@ textarea {
 .form-filed:focus .input-form {
   border: 1px solid rgba(33, 150, 243, 0.9);
   border-radius: 4px;
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
+  -webkit-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition-property: border-color;
   transition-property: border-color;
 }
 
 .input-form:focus {
-  fill: var(--text-color-lightblue);
+  fill: #2196f3;
   border: 1px solid rgba(33, 150, 243, 0.9);
   border-radius: 4px;
 }
 
 .input-form:focus ~ .form-icon {
-  fill: var(--text-color-lightblue);
+  fill: #2196f3;
 }
 
 .input-comment {
@@ -1053,8 +1037,8 @@ textarea {
 .input-comment:focus {
   border: 1px solid rgba(33, 150, 243, 0.9);
   border-radius: 4px;
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
+  -webkit-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition-property: border-color;
   transition-property: border-color;
   outline: none;
@@ -1092,7 +1076,7 @@ textarea {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
-  color: var(--text-color-grey);
+  color: #757575;
 }
 
 .form-comment {
@@ -1127,7 +1111,7 @@ textarea {
 }
 
 .formlink {
-  color: var(--text-color-lightblue);
+  color: #2196f3;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
@@ -1137,7 +1121,7 @@ textarea {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: var(--text-color-grey);
+  color: #757575;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1162,7 +1146,7 @@ textarea {
   width: 16px;
   height: 15px;
   margin-right: 9px;
-  border: 2px solid var(--text-color-black);
+  border: 2px solid #000000;
   border-radius: 2px;
   cursor: pointer;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1172,16 +1156,16 @@ textarea {
 }
 
 .checkbox:checked + .checkicon {
-  border-color: var(--text-color-lightblue);
+  border-color: #2196f3;
   background-color: #2196f3;
   background-image: url("../images/icon-check1.svg");
   background-size: contain;
   background-origin: border-box;
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
+  -webkit-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox:focus + .checkicon {
-  border-color: var(--text-color-lightblue);
+  border-color: #2196f3;
 }
 /*# sourceMappingURL=main.css.map */
