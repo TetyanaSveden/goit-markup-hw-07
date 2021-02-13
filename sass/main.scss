@@ -1,5 +1,5 @@
 @import "utils/variables";
-@import "components/common";
+@import "base/common";
 
 @import "components/header";
 @import "components/nav-logo";
@@ -9,9 +9,9 @@
 @import "components/footer-form";
 @import "components/colleagues";
 @import "components/colleague-socials";
-@import "portfolio/portfolio-btn";
-@import "portfolio/portfolio-links";
+@import "layout/portfolio-btn";
+@import "layout/portfolio-links";
 @import "components/clients-list";
-@import "components/modal";
-@import "components/modal-form";
-@import "components/checkbox";
+@import "layout/modal";
+@import "layout/modal-form";
+@import "layout/checkbox";
